@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0;
+}
+
+/* Custom Marker Pin Styles */
+.custom-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 2px solid white;
+  color: white;
+  font-weight: 800;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.custom-pin-a {
+  background-color: #059669;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+}
+
+.custom-pin-b {
+  background-color: #e11d48;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+}
+
+.custom-pin-tj {
+  background-color: #2563eb;
+  width: 26px;
+  height: 26px;
+  font-size: 11px;
+}
